@@ -25,7 +25,7 @@ apiHandler = (event) => {
   event.preventDefault();
   API.getArticles(this.state.topic, this.state.StartDate, this.state.EndDate).then((res)=> {
     this.setState({StartDate: '', EndDate: '', Topic: ''})
-    console.log(res)
+    console.log("I am having the object array", res)
   })
 }
 
